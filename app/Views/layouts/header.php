@@ -1,19 +1,13 @@
-<?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-$cantHistorial = count($_SESSION['historial_pedidos'] ?? []);
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Pizza Nostra | Menú Virtual para Mesas & Pedidos en Local</title>
+    <title>La Pizza Nostra | Menú Digital de Pizzas Artesanales</title>
 
     <!-- Meta Tags para SEO -->
-    <meta name="description" content="Menú Virtual interactivo de la Pizzería La Pizza Nostra para consumo en local y atención en mesa.">
-    <meta name="keywords" content="menu virtual, pizzeria, atencion en mesa, pedidos en local, get, post, mvc, historial">
+    <meta name="description" content="Menú digital interactivo de la Pizzería La Pizza Nostra: consulta el catálogo de pizzas artesanales y agrega nuevas variedades.">
+    <meta name="keywords" content="menu digital, pizzeria, catalogo de pizzas, agregar pizza, get, post, mvc">
 
     <!-- CSS Libraries (Bibliotecas Externas) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,22 +45,9 @@ $cantHistorial = count($_SESSION['historial_pedidos'] ?? []);
                             <i class="fa-solid fa-plus-circle text-danger me-1"></i> Agregar Pizza
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= (isset($_GET['action']) && $_GET['action'] == 'order') ? 'active' : '' ?>" href="index.php?action=order">
-                            <i class="fa-solid fa-chair text-success me-1"></i> Pedido para Mesa
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= (isset($_GET['action']) && $_GET['action'] == 'history') ? 'active' : '' ?>" href="index.php?action=history">
-                            <i class="fa-solid fa-clock-rotate-left text-info me-1"></i> Mis Pedidos
-                            <?php if ($cantHistorial > 0): ?>
-                                <span class="badge bg-danger rounded-pill ms-1"><?= $cantHistorial ?></span>
-                            <?php endif; ?>
-                        </a>
-                    </li>
                     <li class="nav-item ms-lg-2">
                         <span class="badge bg-success rounded-pill px-3 py-2 border border-warning">
-                            <i class="fa-solid fa-shop me-1"></i> Atención en Local
+                            <i class="fa-solid fa-shop me-1"></i> Menú Digital
                         </span>
                     </li>
                 </ul>

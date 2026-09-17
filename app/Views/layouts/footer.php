@@ -6,19 +6,19 @@
                         <i class="fa-solid fa-pizza-slice me-2"></i>La Pizza Nostra
                     </h5>
                     <p class="text-white-50">
-                        Tradición artesanal napolitana. Sistema de Menú Virtual para atención rápida en mesa y pedidos directos en local.
+                        Tradición artesanal napolitana. Menú digital para consultar el catálogo completo de pizzas de la casa.
                     </p>
                 </div>
                 
                 <div class="col-lg-4">
                     <h6 class="text-uppercase fw-bold text-white mb-3">Atención en el Local</h6>
-                    <p class="text-white-50 mb-1"><i class="fa-solid fa-shop text-warning me-2"></i>Consumo en Salón & Pedidos en Ventanilla</p>
+                    <p class="text-white-50 mb-1"><i class="fa-solid fa-shop text-warning me-2"></i>Consulta nuestro menú digital en salón & ventanilla</p>
                     <p class="text-white-50 mb-0"><i class="fa-regular fa-clock text-warning me-2"></i>Lunes a Domingo: 12:00 PM - 11:00 PM</p>
                 </div>
             </div>
             <hr class="my-4 border-secondary">
             <div class="text-center text-white-50 small">
-                <p class="mb-0">&copy; <?= date('Y') ?> La Pizza Nostra - Menú Virtual Desarrollado bajo Arquitectura MVC.</p>
+                <p class="mb-0">&copy; <?= date('Y') ?> La Pizza Nostra - Menú Digital Desarrollado bajo Arquitectura MVC.</p>
             </div>
         </div>
     </footer>

@@ -4,11 +4,11 @@
     <img src="assets/images/pizzeria_hero.jpg" alt="Menú Virtual de La Pizza Nostra" class="hero-bg-img">
     <div class="container position-relative py-5 text-center text-white">
         <span class="badge bg-warning text-dark font-monospace mb-3 fs-6 px-3 py-2 rounded-pill">
-            <i class="fa-solid fa-utensils me-2"></i>Menú Virtual Interactivo para Mesas
+            <i class="fa-solid fa-utensils me-2"></i>Menú Digital de Pizzas Artesanales
         </span>
-        <h1 class="display-3 brand-font fw-bold text-shadow mb-2">Menú Virtual "La Pizza Nostra"</h1>
+        <h1 class="display-3 brand-font fw-bold text-shadow mb-2">Menú Digital "La Pizza Nostra"</h1>
         <p class="lead max-w-600 mx-auto text-light opacity-90">
-            Explora nuestras pizzas artesanales, busca tu favorita por su nombre y realiza tu pedido directo a cocina desde tu mesa.
+            Explora nuestras pizzas artesanales, busca tu favorita por su nombre y descubre todas las variedades de la casa.
         </p>
     </div>
 </section>
@@ -151,9 +151,9 @@
                                     <small class="text-muted d-block">Precio:</small>
                                     <span class="fs-4 fw-bold text-danger">$<?= number_format($pizza['precio'], 2) ?></span>
                                 </div>
-                                <a href="index.php?action=order&pizza_id=<?= $pizza['id'] ?>" class="btn btn-warning btn-sm fw-bold">
-                                    <i class="fa-solid fa-utensils me-1"></i> Pedir a Mesa
-                                </a>
+                                <span class="badge bg-success-subtle text-success border border-success-subtle">
+                                    <i class="fa-solid fa-circle-check me-1"></i>Disponible
+                                </span>
                             </div>
                         </div>
 

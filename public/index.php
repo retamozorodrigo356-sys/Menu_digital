@@ -23,14 +23,12 @@ spl_autoload_register(function ($class) {
 });
 
 use App\Controllers\MenuController;
-use App\Controllers\OrderController;
 
 // Obtener la acción deseada desde la URL (petición GET)
 $action = $_GET['action'] ?? 'home';
 
-// Instanciar controladores
+// Instanciar controlador
 $menuController = new MenuController();
-$orderController = new OrderController();
 
 // Enrutamiento de peticiones
 switch ($action) {
@@ -48,22 +46,6 @@ switch ($action) {
 
     case 'store_pizza':
         $menuController->storePizza();
-        break;
-
-    case 'order':
-        $orderController->create();
-        break;
-
-    case 'checkout_submit':
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $orderController->store();
-        } else {
-            $orderController->create();
-        }
-        break;
-
-    case 'history':
-        $orderController->history();
         break;
 
     default:

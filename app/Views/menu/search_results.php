@@ -77,7 +77,9 @@
                             <p class="text-muted small mb-2"><?= htmlspecialchars($pizza['descripcion']) ?></p>
                             <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="fs-5 fw-bold text-danger">$<?= number_format($pizza['precio'], 2) ?></span>
-                                <a href="index.php?action=order&pizza_id=<?= $pizza['id'] ?>" class="btn btn-warning btn-sm">Ordenar (POST)</a>
+                                <a href="index.php?action=home" class="btn btn-outline-danger btn-sm">
+                                    <i class="fa-solid fa-utensils me-1"></i>Ver en el Menú
+                                </a>
                             </div>
                         </div>
                     </div>
