@@ -1,0 +1,180 @@
+/* ==========================================================================
+   ESTILOS PERSONALIZADOS - MENÚ DIGITAL "LA PIZZA NOSTRA" (CSS PROPIO)
+   ========================================================================== */
+
+:root {
+    --primary-color: #d9381e;       /* Rojo Terracota Artesanal */
+    --secondary-color: #f4a261;     /* Dorado Queso Horneado */
+    --dark-color: #1a1a1a;          /* Carbón Elegante */
+    --accent-green: #2a9d8f;        /* Albahaca Fresca */
+    --light-bg: #fffbf7;            /* Fondo Crema Suave */
+    --card-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--light-bg);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.brand-font {
+    font-family: var(--font-heading);
+}
+
+/* --------------------------------------------------------------------------
+   NAVBAR & NAVEGACIÓN
+   -------------------------------------------------------------------------- */
+.custom-navbar {
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--primary-color);
+    padding: 1rem 0;
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.custom-navbar .nav-link {
+    color: #e0e0e0;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+/* --------------------------------------------------------------------------
+   HERO BANNER
+   -------------------------------------------------------------------------- */
+.hero-section {
+    min-height: 380px;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4) saturate(1.2);
+}
+
+.text-shadow {
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.7);
+}
+
+.max-w-600 {
+    max-width: 600px;
+}
+
+/* --------------------------------------------------------------------------
+   FORMULARIOS & FIELDSETS (ANATOMÍA DEL FORMULARIO)
+   -------------------------------------------------------------------------- */
+.form-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+fieldset {
+    border: 1px solid #e2e8f0 !important;
+    transition: all 0.3s ease;
+}
+
+fieldset:focus-within {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 10px rgba(217, 56, 30, 0.1);
+}
+
+legend {
+    font-size: 0.95rem !important;
+    letter-spacing: 0.5px;
+}
+
+.form-label {
+    color: #334155;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid #cbd5e1;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(217, 56, 30, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   TARJETAS DE PRODUCTO / PIZZAS
+   -------------------------------------------------------------------------- */
+.product-card {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(217, 56, 30, 0.15) !important;
+}
+
+.img-container {
+    height: 200px;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.pizza-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .pizza-img {
+    transform: scale(1.08);
+}
+
+.fs-7 {
+    font-size: 0.75rem;
+}
+
+.max-h-180 {
+    max-height: 180px;
+    object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   SECCIÓN EDUCATIVA HTTP GET / POST
+   -------------------------------------------------------------------------- */
+.educational-card pre {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* --------------------------------------------------------------------------
+   FOOTER
+   -------------------------------------------------------------------------- */
+.custom-footer {
+    background-color: #111111;
+    border-top: 4px solid var(--primary-color);
+}

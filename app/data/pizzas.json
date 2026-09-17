@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pizza Margherita Tradizionale",
+        "categoria": "artesanal",
+        "precio": 12.5,
+        "descripcion": "Salsa de tomate napolitana, mozzarella di bufala fresca, albahaca fresca y aceite de oliva virgen extra.",
+        "ingredientes": [
+            "Tomate",
+            "Mozzarella",
+            "Albahaca",
+            "Aceite de Oliva"
+        ],
+        "calorias": 780,
+        "imagen": "margherita.jpg",
+        "popular": true
+    },
+    {
+        "id": 2,
+        "nombre": "Pepperoni Speciale",
+        "categoria": "clasica",
+        "precio": 14,
+        "descripcion": "Doble porción de pepperoni crocante, queso mozzarella fundido y orégano silvestre italiano.",
+        "ingredientes": [
+            "Pepperoni",
+            "Mozzarella",
+            "Salsa Especial",
+            "Orégano"
+        ],
+        "calorias": 950,
+        "imagen": "pepperoni.jpg",
+        "popular": true
+    },
+    {
+        "id": 3,
+        "nombre": "Quattro Formaggi Gourmet",
+        "categoria": "gourmet",
+        "precio": 16.5,
+        "descripcion": "Exquisita mezcla de 4 quesos: Gorgonzola madurado, Mozzarella, Parmigiano Reggiano y Fontina.",
+        "ingredientes": [
+            "Gorgonzola",
+            "Mozzarella",
+            "Parmesano",
+            "Fontina"
+        ],
+        "calorias": 1020,
+        "imagen": "quattro_formaggi.jpg",
+        "popular": false
+    },
+    {
+        "id": 4,
+        "nombre": "BBQ Chicken & Smoke",
+        "categoria": "especial",
+        "precio": 15.5,
+        "descripcion": "Pechuga de pollo a la parrilla, salsa BBQ ahumada, cebolla morada caramelizada y queso cheddar.",
+        "ingredientes": [
+            "Pollo a la Parrilla",
+            "Salsa BBQ",
+            "Cebolla Morada",
+            "Cheddar"
+        ],
+        "calorias": 890,
+        "imagen": "bbq_chicken.jpg",
+        "popular": false
+    },
+    {
+        "id": 5,
+        "nombre": "Pizza Tropical Hawaiana",
+        "categoria": "artesanal",
+        "precio": 17.5,
+        "descripcion": "Deliciosa pizza artesanal con pina caramelizada, jamon ahumado y queso mozzarella fundido.",
+        "ingredientes": [
+            "Pina",
+            "Jamon Ahumado",
+            "Mozzarella",
+            "Salsa Napolitana"
+        ],
+        "calorias": 920,
+        "imagen": "margherita.jpg",
+        "popular": false
+    },
+    {
+        "id": 6,
+        "nombre": "pizza de queso",
+        "categoria": "clasica",
+        "precio": 15,
+        "descripcion": "queso",
+        "ingredientes": [
+            "jamon"
+        ],
+        "calorias": 850,
+        "imagen": "pizza_1789609536_581.jpg",
+        "popular": true
+    }
+]
