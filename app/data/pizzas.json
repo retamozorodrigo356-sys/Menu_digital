@@ -91,5 +91,18 @@
         "calorias": 850,
         "imagen": "pizza_1789609536_581.jpg",
         "popular": true
+    },
+    {
+        "id": 7,
+        "nombre": "pizza normal",
+        "categoria": "clasica",
+        "precio": 15,
+        "descripcion": "queso y peperoni",
+        "ingredientes": [
+            "peperoni"
+        ],
+        "calorias": 850,
+        "imagen": "pizza_1789652767_986.jpg",
+        "popular": false
     }
 ]

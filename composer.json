@@ -1,0 +1,15 @@
+{
+    "name": "user/menu-digital",
+    "autoload": {
+        "psr-4": {
+            "User\\MenuDigital\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo",
+            "email": "retamozorodrigo356@gamil.com"
+        }
+    ],
+    "require": {}
+}
